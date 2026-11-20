@@ -1,0 +1,37 @@
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (48ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [m].[idMedico], [m].[AMaterno], [m].[APaterno], [m].[Direccion], [m].[Especialidad], [m].[Estatus], [m].[Nombre], [m].[Telefono]
+      FROM [Medicos] AS [m]
+      WHERE [m].[Estatus] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [m].[idMedico], [m].[AMaterno], [m].[APaterno], [m].[Direccion], [m].[Especialidad], [m].[Estatus], [m].[Nombre], [m].[Telefono]
+      FROM [Medicos] AS [m]
+      WHERE [m].[Estatus] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (48ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [m].[idMedico], [m].[AMaterno], [m].[APaterno], [m].[Direccion], [m].[Especialidad], [m].[Estatus], [m].[Nombre], [m].[Telefono]
+      FROM [Medicos] AS [m]
+      WHERE [m].[Estatus] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (38ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [Medicos] ([AMaterno], [APaterno], [Direccion], [Especialidad], [Estatus], [Nombre], [Telefono])
+      OUTPUT INSERTED.[idMedico]
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [m].[idMedico], [m].[AMaterno], [m].[APaterno], [m].[Direccion], [m].[Especialidad], [m].[Estatus], [m].[Nombre], [m].[Telefono]
+      FROM [Medicos] AS [m]
+      WHERE [m].[Estatus] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [m].[idMedico], [m].[AMaterno], [m].[APaterno], [m].[Direccion], [m].[Especialidad], [m].[Estatus], [m].[Nombre], [m].[Telefono]
+      FROM [Medicos] AS [m]
+      WHERE [m].[Estatus] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [m].[idMedico], [m].[AMaterno], [m].[APaterno], [m].[Direccion], [m].[Especialidad], [m].[Estatus], [m].[Nombre], [m].[Telefono]
+      FROM [Medicos] AS [m]
+      WHERE [m].[idMedico] = @p

@@ -1,0 +1,53 @@
+@sitio1_HostAddress = http://localhost:5158
+
+### Obtener todos los médicos activos
+GET {{sitio1_HostAddress}}/api/medicos
+Accept: application/json
+
+###
+
+### Obtener un médico por ID
+GET {{sitio1_HostAddress}}/api/medicos/1
+Accept: application/json
+
+###
+
+### Crear un nuevo médico
+POST {{sitio1_HostAddress}}/api/medicos
+Content-Type: application/json
+
+{
+  "nombre": "Juan",
+  "aPaterno": "Pérez",
+  "aMaterno": "López",
+  "telefono": "1234567890",
+  "direccion": "Calle Principal 123",
+  "especialidad": "Cardiología",
+  "estatus": true
+}
+
+###
+
+### Editar un médico existente (el id de la URL debe ser igual al idMedico del JSON)
+PUT {{sitio1_HostAddress}}/api/medicos/2
+Content-Type: application/json
+
+{
+  "idMedico": 2,
+  "nombre": "Juan Carlos",
+  "aPaterno": "Pérez",
+  "aMaterno": "López",
+  "telefono": "9876543210",
+  "direccion": "Av. Reforma 456",
+  "especialidad": "Neurología",
+  "estatus": true
+}
+
+###
+
+### Eliminar (desactivar) un médico
+DELETE {{sitio1_HostAddress}}/api/medicos/2
+
+###
+
+
